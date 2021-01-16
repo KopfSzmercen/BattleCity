@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Brick-Font";
+  src: url("./fonts/BlockStockRegular-A71p.ttf");
+}
+
+.container {
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100vw;
+  max-height: 100vh;
+  background-color: #010101;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.container h1 {
+  position: relative;
+  font-size: 4.5em;
+  font-family: 'Brick-Font';
+  font-style: normal;
+  letter-spacing: 5px;
+  font-weight: 100;
+  color: #dc5539;
+  cursor: default;
+}
+
+.container h2 {
+  padding: 10px;
+  position: relative;
+  margin-top: -290px;
+  font-size: 2em;
+  letter-spacing: 3px;
+  font-family: 'Brick-Font';
+  color: #c2c2c2;
+  cursor: pointer;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.container h2::before {
+  position: absolute;
+  left: -40px;
+  top: 10px;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: url(./images/icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: MoveTank 1.3s infinite ease-in;
+          animation: MoveTank 1.3s infinite ease-in;
+}
+
+.game_over {
+  top: 0px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  left: 0px;
+  height: 100%;
+  width: 100vw;
+  max-height: 100vh;
+  background: #010101;
+  z-index: 1000;
+  -webkit-transition: .8s linear;
+  transition: .8s linear;
+}
+
+.game_over h1 {
+  font-size: 4.5em;
+  font-family: 'Brick-Font';
+  font-style: normal;
+  letter-spacing: 5px;
+  font-weight: 100;
+  color: #dc5539;
+  cursor: default;
+}
+
+.game_over h2 {
+  padding: 10px;
+  position: relative;
+  margin-top: -290px;
+  font-size: 2em;
+  letter-spacing: 3px;
+  font-family: 'Brick-Font';
+  color: #c2c2c2;
+  cursor: pointer;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.game_over h2::before {
+  position: absolute;
+  left: -40px;
+  top: 10px;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: url(./images/icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: MoveTank 1.3s infinite ease-in;
+          animation: MoveTank 1.3s infinite ease-in;
+}
+
+.game_over.hidden {
+  -webkit-transform: translate(0%, 200%);
+          transform: translate(0%, 200%);
+  overflow: hidden;
+}
+
+.game_over.hidden h1 {
+  display: none;
+}
+
+.game_over.hidden h2 {
+  display: none;
+}
+
+@-webkit-keyframes MoveTank {
+  0% {
+    left: -40px;
+  }
+  100% {
+    left: -60px;
+  }
+}
+
+@keyframes MoveTank {
+  0% {
+    left: -40px;
+  }
+  100% {
+    left: -60px;
+  }
+}
+
+.container.hidden {
+  -webkit-transform: translate(0%, 200%);
+          transform: translate(0%, 200%);
+}
+/*# sourceMappingURL=style.css.map */

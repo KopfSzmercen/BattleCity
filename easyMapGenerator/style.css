@@ -1,0 +1,74 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+}
+
+.container{
+    margin: 20px auto;
+    background-color: rgb(48, 48, 48);
+    width: 700px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(50, 14px);
+    grid-template-rows: repeat(50,14px);
+}
+
+.cell{
+    border: .1px solid rgba(216, 216, 216, 0.425);
+    width: 14px;
+    height: 14px;
+    transition: .1s;
+}
+
+.cell:hover{
+    background-color: #dc5539;
+}
+
+.cell.picked{
+    background-color: #dc5539;
+}
+
+.inputs{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputs input{
+    padding: 5px;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    height: 30px;
+}
+
+.inputs input:focus{
+    outline: none;
+}
+
+.inputs button{
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 3px 10px;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.inputs button:hover{
+    background-color: rgb(160, 160, 250);
+}
+.eagle_btn.clicked{
+    background-color: rgb(139, 139, 241);
+}
+
