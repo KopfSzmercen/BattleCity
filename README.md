@@ -10,7 +10,7 @@ To bundle everything I used Webpack.
 
 Well, there's not much to talk about as it is a simple game. 
 To create a plan of the map I created a simple application in the folder EasyMapGenerator. 
-In it you can click on a cell to if you want it to be a single brick. When you're done you can save your plan in a form of JSON file.
+In it you can click on a cell if you want it to be a brick. When you're done you can save and download your plan in a form of JSON file.
 The downside of it is that you have to paste this file to the folder with maps and rebuild project... Maybe I'll try to work it out in the future.
 
 You can controll your golden tank using arrows and you shoot using the space bar.
